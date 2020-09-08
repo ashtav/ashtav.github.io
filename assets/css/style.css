@@ -1,0 +1,45 @@
+.menu-toggle {
+  position: fixed;
+  left: 50%;
+  bottom: -20px;
+  transform: translate(-50%, 20px);
+  border: 1px #ddd solid;
+  padding: 15px 15px 15px 15px;
+  width: 80px;
+  height: 80px;
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: ripple 2s linear infinite;
+  transition: .2s; }
+  .menu-toggle:focus {
+    outline: none; }
+  .menu-toggle:hover {
+    width: 85px;
+    height: 85px; }
+  .menu-toggle:active {
+    width: 75px;
+    height: 75px; }
+  .menu-toggle i {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 20px);
+    animation: arrow 1s alternate infinite; }
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(171, 189, 211, 0.3), 0 0 0 1em rgba(171, 189, 211, 0.3), 0 0 0 3em rgba(171, 189, 211, 0.3); }
+  100% {
+    box-shadow: 0 0 0 1em rgba(171, 189, 211, 0.3), 0 0 0 3em rgba(171, 189, 211, 0.3), 0 0 0 5em rgba(171, 189, 211, 0); } }
+@keyframes arrow {
+  0% {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 10px); }
+  100% {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 20px); } }
+
+/*# sourceMappingURL=style.css.map */

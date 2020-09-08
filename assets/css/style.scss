@@ -1,0 +1,61 @@
+
+.menu-toggle{
+    position: fixed;
+    left: 50%; bottom: -20px;
+    transform: translate(-50%, 20px);
+    border: 1px #ddd solid;
+    padding: 15px 15px 15px 15px;
+    width: 80px; height: 80px;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: ripple 2s linear infinite;
+    transition: .2s;
+
+    &:focus{
+        outline: none;
+    }
+
+    &:hover{
+        width: 85px; height: 85px;
+    }
+
+    &:active{
+        width: 75px; height: 75px;
+    }
+
+    i{
+        position: absolute;
+        left: 50%; top: 0;
+        transform: translate(-50%, 20px);
+        animation: arrow 1s alternate infinite;
+    }
+}
+
+$color: #abbdd3;
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba($color, 0.3),
+                    0 0 0 1em rgba($color, 0.3),
+                    0 0 0 3em rgba($color, 0.3)
+                    // 0 0 0 5em rgba($color, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 0 1em rgba($color, 0.3),
+                    0 0 0 3em rgba($color, 0.3),
+                    0 0 0 5em rgba($color, 0)
+                    // 0 0 0 8em rgba($color, 0);
+    }
+}
+
+@keyframes arrow{
+    0%{
+        left: 50%; top: 0;
+        transform: translate(-50%, 10px);
+    }
+    100%{
+        left: 50%; top: 0;
+        transform: translate(-50%, 20px);
+    }
+}

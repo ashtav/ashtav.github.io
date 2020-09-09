@@ -74,80 +74,41 @@
     top: 0;
     transform: translate(-50%, 20px); } }
 .list-menu {
-  position: absolute;
-  bottom: 0px;
+  position: fixed;
   left: 50%;
+  bottom: 0px;
   transform: translate(-50%, 0);
   opacity: 0;
   transition: .2s;
-  height: 100%;
-  width: 300px; }
+  width: 200px; }
   .list-menu li {
+    padding: 10px 15px;
     background-color: #fff;
-    padding: 9px 10px;
-    position: fixed;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 10px;
-    transition: .3s;
-    z-index: -1;
-    color: #666;
-    cursor: pointer; }
-    .list-menu li.left {
-      left: 50%;
-      bottom: 0px;
-      transform: translate(-50%, 0px); }
-    .list-menu li.right {
-      right: 50%;
-      bottom: 0px;
-      transform: translate(50%, 0px); }
-    .list-menu li.top {
-      left: 50%;
-      bottom: 00px;
-      transform: translate(-50%, 0px); }
+    border-bottom: 1px #e6e8eb solid;
+    font-weight: 200;
+    transition: .1s; }
+    .list-menu li i {
+      margin-right: 7px;
+      color: #444; }
+    .list-menu li:last-child {
+      border-bottom: 2px #abbdd3 solid; }
+    .list-menu li:hover {
+      background: #f7faff;
+      cursor: pointer; }
+    .list-menu li:active {
+      background: #f1f7ff; }
+  .list-menu::before {
+    content: '';
+    position: absolute;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #abbdd3 transparent transparent transparent;
+    left: 50%;
+    bottom: -20px; }
   .list-menu.show {
-    opacity: 1; }
-    .list-menu.show li {
-      width: 50px;
-      height: 50px;
-      font-size: 22px;
-      padding: 9px 14px;
-      z-index: 999; }
-      .list-menu.show li:hover {
-        transition: .1s;
-        color: #999; }
-      .list-menu.show li.left {
-        left: 0;
-        bottom: 50px; }
-      .list-menu.show li.right {
-        right: 0;
-        bottom: 50px; }
-        .list-menu.show li.right:after {
-          animation: spin 2s infinite ease-in;
-          animation-delay: .5s; }
-      .list-menu.show li.top {
-        left: 50%;
-        bottom: 70px;
-        transform: translate(-50%, -70px); }
-        .list-menu.show li.top:after {
-          animation: spin 2s infinite ease-in;
-          animation-delay: 1s; }
-      .list-menu.show li:after {
-        content: '';
-        position: absolute;
-        box-shadow: 0 1px 2px #09f;
-        width: 51px;
-        height: 51px;
-        border-radius: 50%;
-        left: 0;
-        top: 0;
-        animation: spin 2s infinite ease-in;
-        transform: rotate(0); }
-@keyframes spin {
-  0% {
-    transform: rotate(0); }
-  100% {
-    transform: rotate(360deg); } }
+    opacity: 1;
+    bottom: 150px;
+    width: 330px; }
 
 /*# sourceMappingURL=style.css.map */

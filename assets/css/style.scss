@@ -32,6 +32,23 @@
     }
 }
 
+.toggle-search{
+    position: fixed;
+    z-index: 5;
+    top: 15px; right: 15px;
+    display: none;
+
+    button{
+        padding: 10px 15px;
+        border: 1px #abbdd3 solid;
+        background-color: #fff;
+    }
+}
+
+body{
+    overflow: hidden;
+}
+
 .header{
     position: fixed;
     left: 40%; top: 50%;
@@ -89,6 +106,7 @@
         button{
             padding: 10px 15px;
             border: 1px #abbdd3 solid;
+            background-color: #fff;
         }
     }
 }
@@ -386,5 +404,9 @@ $color: #abbdd3;
     .social{
         top: 15px;
         left: 15px;
+    }
+
+    .toggle-search{
+        display: block;
     }
 }

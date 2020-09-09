@@ -22,6 +22,20 @@
       .nav-menu li a:hover {
         color: #666; }
 
+.toggle-search {
+  position: fixed;
+  z-index: 5;
+  top: 15px;
+  right: 15px;
+  display: none; }
+  .toggle-search button {
+    padding: 10px 15px;
+    border: 1px #abbdd3 solid;
+    background-color: #fff; }
+
+body {
+  overflow: hidden; }
+
 .header {
   position: fixed;
   left: 40%;
@@ -68,7 +82,8 @@
     margin: 15px 0; }
     .head-slider .control button {
       padding: 10px 15px;
-      border: 1px #abbdd3 solid; }
+      border: 1px #abbdd3 solid;
+      background-color: #fff; }
 
 .social {
   position: fixed;
@@ -246,6 +261,9 @@
 
   .social {
     top: 15px;
-    left: 15px; } }
+    left: 15px; }
+
+  .toggle-search {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */

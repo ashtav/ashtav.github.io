@@ -19,7 +19,7 @@
         <i class="la la-arrow-up"></i>
     </button>
 
-    <ul class="list-menu">
+    <ul class="list-menu show">
         <li class="left"> <i class="la la-file-alt"></i> </li>
         <li class="top"> <i class="la la-user"></i> </li>
         <li class="right"> <i class="la la-briefcase"></i> </li>
@@ -29,11 +29,20 @@
         const doc = document
 
         doc.querySelector('.menu-toggle').addEventListener('click', (e) => {
-            let menu = doc.querySelector('.list-menu')
+            let menu = doc.querySelector('.list-menu'),
+                toggleMenu = doc.querySelector('.menu-toggle')
+
             if(!menu.classList.contains('show')){
                 menu.classList.add('show')
+
+                toggleMenu.classList.add('push')
+                toggleMenu.classList.remove('pull')
+
             }else{
                 menu.classList.remove('show')
+                
+                toggleMenu.classList.remove('push')
+                toggleMenu.classList.add('pull')
             }
         })
 

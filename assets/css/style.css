@@ -14,6 +14,36 @@
   animation: ripple 2s linear infinite;
   transition: .2s;
   z-index: 1; }
+  .menu-toggle.push {
+    animation: ripple 2s linear infinite, push 0.5s; }
+  .menu-toggle.pull {
+    animation: ripple 2s linear infinite, pull 0.5s; }
+@keyframes push {
+  0% {
+    width: 85px;
+    height: 85px; }
+  30% {
+    width: 75px;
+    height: 75px; }
+  60% {
+    width: 95px;
+    height: 95px; }
+  100% {
+    width: 85px;
+    height: 85px; } }
+@keyframes pull {
+  0% {
+    width: 85px;
+    height: 85px; }
+  30% {
+    width: 95px;
+    height: 95px; }
+  60% {
+    width: 75px;
+    height: 75px; }
+  100% {
+    width: 85px;
+    height: 85px; } }
   .menu-toggle:focus {
     outline: none; }
   .menu-toggle:hover {
@@ -45,10 +75,13 @@
     transform: translate(-50%, 20px); } }
 .list-menu {
   position: absolute;
-  bottom: 50px;
-  left: 0;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
   opacity: 0;
-  transition: .2s; }
+  transition: .2s;
+  height: 100%;
+  width: 300px; }
   .list-menu li {
     background-color: #fff;
     padding: 9px 10px;
@@ -85,13 +118,11 @@
         transition: .1s;
         color: #999; }
       .list-menu.show li.left {
-        left: 38%;
-        bottom: 50px;
-        transform: translate(-38%, 0px); }
+        left: 0;
+        bottom: 50px; }
       .list-menu.show li.right {
-        right: 38%;
-        bottom: 50px;
-        transform: translate(38%, 0px); }
+        right: 0;
+        bottom: 50px; }
         .list-menu.show li.right:after {
           animation: spin 2s infinite ease-in;
           animation-delay: .5s; }

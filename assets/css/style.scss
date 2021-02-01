@@ -3,11 +3,11 @@
 
 html, body{
     overflow-x: hidden;
+    font-family: 'ABeeZee', sans-serif;
 }
 
 .header{
     background-color: #fafafc;
-    padding: 25px 0;
     position: relative;
 }
 
@@ -19,6 +19,7 @@ html, body{
 .text-name{
     color: #0c0b5d;
     font-weight: bold;
+    font-size: 65px;
 }
 
 .btn-orange{
@@ -45,6 +46,21 @@ html, body{
     border-radius: 50px;
     width: 80%;
     transform: translate(-50%, 0);
+}
+
+.avatar{
+    position: absolute;
+    top: 15px; right: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px #fff solid;
+    box-shadow: 0 2px 4px #ddd;
+
+    img{
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+    }
 }
 
 @media only screen and (max-width: 600px) {

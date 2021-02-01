@@ -1,9 +1,9 @@
 html, body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: 'ABeeZee', sans-serif; }
 
 .header {
   background-color: #fafafc;
-  padding: 25px 0;
   position: relative; }
 
 .v-center {
@@ -12,7 +12,8 @@ html, body {
 
 .text-name {
   color: #0c0b5d;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 65px; }
 
 .btn-orange {
   background-color: #ff9442;
@@ -35,5 +36,18 @@ html, body {
   border-radius: 50px;
   width: 80%;
   transform: translate(-50%, 0); }
+
+.avatar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px #fff solid;
+  box-shadow: 0 2px 4px #ddd; }
+  .avatar img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover; }
 
 /*# sourceMappingURL=style.css.map */

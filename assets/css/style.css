@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
   font-family: 'ABeeZee', sans-serif; }
 
@@ -49,5 +50,32 @@ html, body {
     height: 60px;
     width: 60px;
     object-fit: cover; }
+
+.social {
+  position: absolute;
+  bottom: 17px;
+  transition: .3s; }
+  .social li {
+    list-style: none;
+    display: inline-table;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0;
+    margin: 0; }
+    .social li a {
+      color: #777;
+      display: inline-block;
+      padding: 7px 7px 4px 7px;
+      transition: .3s; }
+      .social li a i {
+        font-size: 22px; }
+      .social li a:hover {
+        color: #0c0b5d !important; }
+
+@media only screen and (max-width: 575px) {
+  .social {
+    left: 50%;
+    bottom: -20px;
+    transform: translate(-50%, 0); } }
 
 /*# sourceMappingURL=style.css.map */

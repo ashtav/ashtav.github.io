@@ -1,101 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Language" content="en" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    
+    <meta name="msapplication-TileColor" content="#206bc4"/>
+    <meta name="theme-color" content="#206bc4"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
 
-    <title>Ashtav</title>
+    <title>Ashta</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.4/tailwind.min.css" integrity="sha512-KO1h5ynYuqsFuEicc7DmOQc+S9m2xiCKYlC3zcZCSEw0RGDsxcMnppRaMZnb0DdzTDPaW22ID/gAGCZ9i+RT/w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="bg-gray-200">
-    <div class="toggle-search">
-        <button> <i class="la la-search"></i> </button>
-    </div>
 
-    <!-- <img class="test" src="https://campbelltaylorwashburn.com/wp-content/uploads/2019/08/Puzzle-Illustration.png" alt=""> -->
+<body>
 
-    <div class="nav-menu">
-        <li class="active"> <a href="">Home</a> </li>
-        <li> <a href="">Product</a> </li>
-        <li> <a href="">About</a> </li>
-    </div>
+    <div class="header">
+        <div class="container">
 
-    <div class="social">
-        <li><i class="la la-facebook"></i></li>
-        <li><i class="la la-instagram"></i></li>
-        <li><i class="la la-twitter"></i></li>
-    </div>
+            <div class="row v-center">
+                <div class="col-8 col-md-6 ">
 
-    <div class="head-slider">
+                    <h5 class="text-orange">Hi, I am</h5>
 
-        <div class="thumbnail">
-            <img src="https://images.fineartamerica.com/images-medium-large/1-light-bulb-design-by-cogs-and-gears-setsiri-silapasuwanchai.jpg" alt="">
-        </div>
+                    <h1 class="text-name">Susila Astawa</h1>
+                    <h5 class="">Web & Mobile App Developer</h5>
+                    <div class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae reprehenderit neque
+                        libero inventore expedita, voluptates quam error ipsum sint.</div>
 
-        <div class="info">
-            <h2 class="text-xl">Ipsum Dolor Sit?</h2>
-            <p class="font-thin my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, deserunt perspiciatis totam quidem at velit harum sed soluta sunt distinctio pariatur provident magni iusto, similique labore voluptatibus recusandae, vel consectetur?</p>
-            <div class="control">
-                <button> <i class="la la-arrow-left"></i> </button>
-                <button> <i class="la la-arrow-right"></i> </button>
+                    <div class="mt-4">
+                        <button class="btn btn-orange">Download CV</button>
+                    </div>
+
+                </div>
+                <div class="col-4 col-md-6">
+                    <img height="400"
+                        src="https://lh3.googleusercontent.com/proxy/XJlbO6SUsSkXFoJyh-kZnBO1XtXQ-8L1ckWfNQgptHLraTd0LoabalNJwT_W_lYg7z3uqm2N3Nz6vzAltuo3NGu0T-iMcR9LgKtUmYjOzcKpTTHEQVxOlm7EDKff6TOs893hpA"
+                        alt="">
+                </div>
             </div>
         </div>
 
-        
+        <!-- <div class="panel-rounded">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae maxime reiciendis facere. Placeat nemo harum asperiores temporibus. Debitis, quos ratione nulla ullam exercitationem ea in cum repellendus, ad dolorem quidem?
+        </div> -->
     </div>
 
-    <div class="header">
-
-        <div class="text-input">
-            <i class="la la-search"></i>
-            <input type="text" placeholder="Ada yang bisa kami bantu?">
-        </div>
-    </div>
-
-    <!-- MENU ===== -->
-
-    <button class="menu-toggle">
-        <i class="la la-arrow-up"></i>
-    </button>
-
-    <ul class="list-menu">
-        <li class="left"> <i class="la la-home"></i> Home </li>
-        <li class="top"> <i class="la la-archive"></i> Product</li>
-        <li class="right"> <i class="la la-info-circle"></i> About</li>
-    </ul>
-
-    <script>
-        const doc = document
-
-        doc.querySelector('.menu-toggle').addEventListener('click', (e) => {
-            let menu = doc.querySelector('.list-menu'),
-                toggleMenu = doc.querySelector('.menu-toggle')
-
-            if(!menu.classList.contains('show')){
-                menu.classList.add('show')
-
-                toggleMenu.classList.add('push')
-                toggleMenu.classList.remove('pull')
-
-            }else{
-                menu.classList.remove('show')
-
-                toggleMenu.classList.remove('push')
-                toggleMenu.classList.add('pull')
-            }
-        })
-
-    </script>
-    
 </body>
+
 </html>

@@ -20,6 +20,7 @@ body {
     color: #0c0b5d;
     font-weight: bold;
     font-size: 65px;
+    font-family: 'Carter One', cursive;
 }
 
 .btn-green {
@@ -33,6 +34,7 @@ body {
 
     &:hover {
         box-shadow: none;
+        color: #fff;
     }
 }
 
@@ -74,16 +76,14 @@ body {
         display: inline-table;
         background-color: #fff;
         border-radius: 3px;
-        padding: 0;
-        margin: 0;
-
+        border: 1px #f1f1f1 solid;
+        
 
         a {
             color: #777;
             display: inline-block;
             padding: 7px 7px 4px 7px;
             transition: .3s;
-
 
             i {
                 font-size: 22px;
@@ -96,10 +96,50 @@ body {
     }
 }
 
+.skills{
+    $border: 1px #ddd solid;
+
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    justify-content: space-around;
+    border-top: $border;
+    border-left: $border;
+  flex-direction: column;
+
+    li{
+        list-style: none;
+        border-bottom: $border;
+        border-right: $border;
+        padding: 15px;
+        display: inline-block;
+        text-align: center;
+        width: calc(100% / 5);
+        background-color: #fff;
+        flex: 1;
+    }
+}
+
 @media only screen and (max-width: 575px) {
     .social{
         left: 50%;
         bottom: -20px;
         transform: translate(-50%, 0);
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills{
+        padding: 0;
+        margin: 0;
+        display: block;
+        justify-content: space-around;
+    
+        li{
+            list-style: none;
+            display: inline-block;
+            text-align: center;
+            width: calc(100% / 3);
+        }
     }
 }

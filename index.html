@@ -39,17 +39,15 @@
 
                         <h1 class="text-name">Ashta.</h1>
                         <h5 class="">Web & Mobile App Developer</h5>
-                        <div class="text-muted">Introverted personality, love the art of design, photo editing, video
-                            editing, music maker. I can play several instruments, but piano is my favorite.</div>
+                        <div class="text-muted">Introverted personality, love the art of design, photo editing, video editing, music maker. I can play several instruments, but piano is my favorite.</div>
 
                         <div class="mt-4">
-                            <a href="https://wa.me/6281999970823" target="_blank" class="btn btn-green"> <i
-                                    class="la la-lg la-whatsapp"></i> Contact Me</a>
+                            <a href="https://wa.me/6281999970823" target="_blank" class="btn btn-green"> <i class="la la-lg la-whatsapp"></i> Contact Me</a>
                         </div>
 
                     </div>
                     <div class="col-2 col-md-6 text-center pt-5">
-                        <img height="500" src="assets/images/man.png" alt="">
+                        <img height="500" src="assets/images/me.png" alt="">
                     </div>
                 </div>
             </div>
@@ -67,11 +65,21 @@
 
 
                 <div class="social">
-                    <li> <a href="#"> <i class="la la-facebook"></i> </a> </li>
-                    <li> <a href="#"> <i class="la la-instagram"></i> </a> </li>
-                    <li> <a href="#"> <i class="la la-linkedin"></i> </a> </li>
-                    <li> <a href="#"> <i class="la la-dribbble"></i> </a> </li>
-                    <li> <a href="#"> <i class="la la-envelope"></i> </a> </li>
+                    <li>
+                        <a href="#"> <i class="la la-facebook"></i> </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="la la-instagram"></i> </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="la la-linkedin"></i> </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="la la-dribbble"></i> </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="la la-envelope"></i> </a>
+                    </li>
                 </div>
             </div>
 
@@ -81,19 +89,14 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
-                        <img height="250"
-                            src="https://vancouverwebdesigns.ca/docs/images/vancouver-graphic-design-brand-identity-logo-design.png"
-                            alt="">
+                        <img height="250" src="https://vancouverwebdesigns.ca/docs/images/vancouver-graphic-design-brand-identity-logo-design.png" alt="">
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-8">
                         <h3>About Me</h3>
-                        <p>Just call me Ashta, I'm 26 years old. I am an irreligious, introverted person, I feel more
-                            comfortable at home, I like painting, music,
-                            I can play several musical instruments such as guitar, drums, violin, kalimba, and piano.
+                        <p>Just call me Ashta, I'm 26 years old. I am an irreligious, introverted person, I feel more comfortable at home, I like painting, music, I can play several musical instruments such as guitar, drums, violin, kalimba, and piano.
                         </p>
-                        <p>I like to discuss about psychology, history, and all the things that people rarely think
-                            about.
+                        <p>I like to discuss about psychology, history, and all the things that people rarely think about.
                         </p>
                     </div>
                 </div>
@@ -110,8 +113,7 @@
 
                         <div class="container">
                             <div class="row skills">
-                                <div class="col col-4 col-sm-4 col-md-3 col-lg-2 p-0" v-for="(row,i) in skills"
-                                    :key="i">
+                                <div class="col col-4 col-sm-4 col-md-3 col-lg-2 p-0" v-for="(row,i) in skills" :key="i">
                                     <div class="py-3 item ">
 
                                         <img :src="row.icon" alt="">
@@ -146,7 +148,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -156,9 +158,8 @@
             <div class="square"></div>
             <div>
 
-            Build with ♥ by Ashta - @home <br>
-            ©2021 - ashtav.github.io
-        </div>
+                Build with ♥ by Ashta - @home <br> ©2021 - ashtav.github.io
+            </div>
 
         </div>
 
@@ -168,66 +169,55 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous"></script>
 
     <script>
-        
-
         new Vue({
             el: "#app",
             data() {
                 return {
                     skills: [{
-                            tool: 'Laravel',
-                            icon: 'https://upload.wikimedia.org/wikipedia/commons/b/bf/Laravel-four-icon.png'
-                        }, {
-                            tool: 'CodeIgniter',
-                            icon: 'https://cdn1.iconfinder.com/data/icons/logos-3/304/codeigniter-icon-512.png'
-                        },
-                        {
-                            tool: 'Vue Cli',
-                            icon: 'https://cdn.iconscout.com/icon/free/png-512/vue-282497.png'
-                        },
-                        {
-                            tool: 'Sass',
-                            icon: 'https://cdn.iconscout.com/icon/free/png-512/sass-226054.png'
-                        },
-                        {
-                            tool: 'Flutter',
-                            icon: 'https://cdn.iconscout.com/icon/free/png-512/flutter-2038877-1720090.png'
-                        },
-                        {
-                            tool: 'MySQL',
-                            icon: 'https://cdn.iconscout.com/icon/free/png-512/mysql-21-1174941.png'
-                        },
-                        {
-                            tool: 'SQLite',
-                            icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sqlite-square-icon.svg/480px-Sqlite-square-icon.svg.png'
-                        },
-                        {
-                            tool: 'Illustrator',
-                            icon: 'https://eps-production.com/wp-content/uploads/2020/03/Illustrator_CC_eps-production.com_.PNG.png'
-                        },
-                        {
-                            tool: 'Photoshop',
-                            icon: 'https://www.blackxperience.com/assets/blackchannel/photos/adobe-photoshop-express-logo-3942.jpg'
-                        },
-                        {
-                            tool: 'Premiere',
-                            icon: 'https://images.vexels.com/media/users/3/163292/isolated/preview/3087de3a36b76b94e9178fd791d7886e-premiere-pro-pr-colored-icon-by-vexels.png'
-                        }
-                    ]
+                        tool: 'Laravel',
+                        icon: 'https://upload.wikimedia.org/wikipedia/commons/b/bf/Laravel-four-icon.png'
+                    }, {
+                        tool: 'CodeIgniter',
+                        icon: 'https://cdn1.iconfinder.com/data/icons/logos-3/304/codeigniter-icon-512.png'
+                    }, {
+                        tool: 'Vue Cli',
+                        icon: 'https://cdn.iconscout.com/icon/free/png-512/vue-282497.png'
+                    }, {
+                        tool: 'Sass',
+                        icon: 'https://cdn.iconscout.com/icon/free/png-512/sass-226054.png'
+                    }, {
+                        tool: 'Flutter',
+                        icon: 'https://cdn.iconscout.com/icon/free/png-512/flutter-2038877-1720090.png'
+                    }, {
+                        tool: 'MySQL',
+                        icon: 'https://cdn.iconscout.com/icon/free/png-512/mysql-21-1174941.png'
+                    }, {
+                        tool: 'SQLite',
+                        icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sqlite-square-icon.svg/480px-Sqlite-square-icon.svg.png'
+                    }, {
+                        tool: 'Illustrator',
+                        icon: 'https://eps-production.com/wp-content/uploads/2020/03/Illustrator_CC_eps-production.com_.PNG.png'
+                    }, {
+                        tool: 'Photoshop',
+                        icon: 'https://www.blackxperience.com/assets/blackchannel/photos/adobe-photoshop-express-logo-3942.jpg'
+                    }, {
+                        tool: 'Premiere',
+                        icon: 'https://images.vexels.com/media/users/3/163292/isolated/preview/3087de3a36b76b94e9178fd791d7886e-premiere-pro-pr-colored-icon-by-vexels.png'
+                    }]
                 }
             },
 
             mounted: () => {
 
-                var flkty = new Flickity( '.list-testimonial', {
-  // options
-  cellAlign: 'left',
-  groupCells: 2
-});
+                var flkty = new Flickity('.list-testimonial', {
+                    // options
+                    cellAlign: 'left',
+                    groupCells: 2
+                });
 
             }
-                
-            
+
+
         })
     </script>
 

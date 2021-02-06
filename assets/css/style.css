@@ -110,7 +110,46 @@ body {
     background-color: #fff;
     border-radius: 5px; }
 
+.nav {
+  background-color: #fff;
+  padding: 15px 0; }
+  .nav img {
+    width: 40px; }
+  .nav .nav-menu {
+    float: right;
+    padding: 0;
+    margin: 0; }
+    .nav .nav-menu li {
+      display: inline-block; }
+      .nav .nav-menu li a {
+        color: #333;
+        text-decoration: none;
+        display: block;
+        padding: 10px 15px;
+        transition: .2s;
+        border-radius: 5px; }
+        .nav .nav-menu li a:hover {
+          color: purple;
+          cursor: pointer;
+          background-color: #efefef; }
+
+.text-dark-green {
+  color: #032732; }
+
+.text-purple {
+  color: purple; }
+
+.text-orange {
+  color: orange; }
+
 @media only screen and (max-width: 575px) {
+  .nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999; }
+
   .social {
     left: 50%;
     bottom: -20px;

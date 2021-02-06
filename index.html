@@ -20,7 +20,9 @@
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"
+        integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/line-awesome.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -28,6 +30,20 @@
 
 <body>
     <div id="app">
+
+        <div class="nav">
+            <div class="container">
+                <img src="assets/images/logo-black.png" alt="">
+
+                <ul class="nav-menu d-none d-md-block">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Store</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
 
         <div class="header">
             <div class="container">
@@ -39,10 +55,12 @@
 
                         <h1 class="text-name">Ashta.</h1>
                         <h5 class="">Web & Mobile App Developer</h5>
-                        <div class="text-muted">Introverted personality, love the art of design, photo editing, video editing, music maker. I can play several instruments, but piano is my favorite.</div>
+                        <div class="text-muted">Introverted personality, love the art of design, photo editing, video
+                            editing and music maker. I can play several instruments, but piano is my favorite.</div>
 
                         <div class="mt-4">
-                            <a href="https://wa.me/6281999970823" target="_blank" class="btn btn-green"> <i class="la la-lg la-whatsapp"></i> Contact Me</a>
+                            <a href="https://wa.me/6281999970823" target="_blank" class="btn btn-green"> <i
+                                    class="la la-lg la-whatsapp"></i> Contact Me</a>
                         </div>
 
                     </div>
@@ -52,33 +70,10 @@
                 </div>
             </div>
 
-            <!-- avatar -->
-            <!-- <div class="avatar">
-            <img src="https://lh3.googleusercontent.com/proxy/XJlbO6SUsSkXFoJyh-kZnBO1XtXQ-8L1ckWfNQgptHLraTd0LoabalNJwT_W_lYg7z3uqm2N3Nz6vzAltuo3NGu0T-iMcR9LgKtUmYjOzcKpTTHEQVxOlm7EDKff6TOs893hpA" alt="">
-        </div> -->
-
-            <!-- <div class="panel-rounded">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae maxime reiciendis facere. Placeat nemo harum asperiores temporibus. Debitis, quos ratione nulla ullam exercitationem ea in cum repellendus, ad dolorem quidem?
-        </div> -->
-
             <div class="container">
-
-
                 <div class="social">
-                    <li>
-                        <a href="#"> <i class="la la-facebook"></i> </a>
-                    </li>
-                    <li>
-                        <a href="#"> <i class="la la-instagram"></i> </a>
-                    </li>
-                    <li>
-                        <a href="#"> <i class="la la-linkedin"></i> </a>
-                    </li>
-                    <li>
-                        <a href="#"> <i class="la la-dribbble"></i> </a>
-                    </li>
-                    <li>
-                        <a href="#"> <i class="la la-envelope"></i> </a>
+                    <li v-for="(row, i) in socials" class="mr-1">
+                        <a :href="row.url" target="_blank"> <i class="la" :class="row.icon"></i> </a>
                     </li>
                 </div>
             </div>
@@ -87,16 +82,32 @@
 
         <section>
             <div class="container py-5">
+                <h3 class="m-0">About Me</h3>
+                <p class="text-muted">Little information about me</p>
+
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
-                        <img height="250" src="https://vancouverwebdesigns.ca/docs/images/vancouver-graphic-design-brand-identity-logo-design.png" alt="">
+                    <div class="col-12 col-md-6 col-lg-7 ">
+                        <!-- <img height="250"
+                            src="https://vancouverwebdesigns.ca/docs/images/vancouver-graphic-design-brand-identity-logo-design.png"
+                            alt=""> -->
+                        <img src="assets/images/bio1.png" alt="" width="100%">
+
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-8">
-                        <h3>About Me</h3>
-                        <p>Just call me Ashta, I'm 26 years old. I am an irreligious, introverted person, I feel more comfortable at home, I like painting, music, I can play several musical instruments such as guitar, drums, violin, kalimba, and piano.
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <p><b class="text-success">A front-end web and mobile</b> development software engineer with
+                            more than <b class="text-secondary">2 years experience</b>. Being a <b
+                                class="text-danger">programmer</b> for me is not <b class="text-danger">just a job</b>
+                            but also a <b class="text-warning">very fun hobby.</b> Likes to learn new things, especially
+                            in programming. <b class="text-success">Able</b> to work in <b
+                                class="text-primary">teams</b> and <b class="text-primary">individually</b>. <b
+                                class="text-success">Able</b> to operate Adobe <b class="text-dark-green">Photoshop</b>,
+                            <b class="text-orange">Illustrator</b> and <b class="text-purple">Premiere</b>.
                         </p>
-                        <p>I like to discuss about psychology, history, and all the things that people rarely think about.
+                        <p class="text-secondary">I like to play <b>chess</b>, discuss about <b
+                                class="text-danger">psychology</b>, <b class="text-purple">history</b>, and all the <b
+                                class="text-warning">things</b> that people <b>rarely</b> think
+                            about.
                         </p>
                     </div>
                 </div>
@@ -113,11 +124,12 @@
 
                         <div class="container">
                             <div class="row skills">
-                                <div class="col col-4 col-sm-4 col-md-3 col-lg-2 p-0" v-for="(row,i) in skills" :key="i">
+                                <div class="col col-4 col-sm-4 col-md-3 col-lg-2 p-0" v-for="(row,i) in skills"
+                                    :key="i">
                                     <div class="py-3 item ">
 
-                                        <img :src="row.icon" alt="">
-                                        <div class="mt-2">{{row.tool}}</div>
+                                        <img :src="'assets/images/icons/ic'+(i + 1)+'.png'" alt="">
+                                        <div class="mt-2" v-html="row"></div>
                                     </div>
 
                                 </div>
@@ -137,14 +149,16 @@
                         <p class="text-muted">What my clients say about my services</p>
 
                         <div class="list-testimonial">
-                            <div class="client m-3" v-for="i in 15" :key="i">
-                                <div>
-                                    <img src="https://www.todaysparent.com/wp-content/uploads/2018/03/parents-are-sharing-their-kids-weirdest-bedtime-requests-and-theyre-hilarious-1280x960.jpg" alt="">
+                            <div class="client m-3" v-for="i in 5" :key="i">
+                                <!-- <div>
+                                    <img src="https://www.todaysparent.com/wp-content/uploads/2018/03/parents-are-sharing-their-kids-weirdest-bedtime-requests-and-theyre-hilarious-1280x960.jpg"
+                                        alt="">
 
-                                </div>
+                                </div> -->
                                 <div class="p-4">
                                     <h5 class="my-2">Lipsum Name</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores deserunt eum odio vitae totam unde ducimus illum. Praesentium, asperiores!</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores deserunt eum
+                                        odio vitae totam unde ducimus illum. Praesentium, asperiores!</p>
                                 </div>
                             </div>
                         </div>
@@ -157,64 +171,52 @@
         <div class="footer">
             <div class="square"></div>
             <div>
-
                 Build with ♥ by Ashta - @home <br> ©2021 - ashtav.github.io
             </div>
-
         </div>
 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"
+        integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA=="
+        crossorigin="anonymous"></script>
 
     <script>
         new Vue({
             el: "#app",
             data() {
                 return {
-                    skills: [{
-                        tool: 'Laravel',
-                        icon: 'https://upload.wikimedia.org/wikipedia/commons/b/bf/Laravel-four-icon.png'
-                    }, {
-                        tool: 'CodeIgniter',
-                        icon: 'https://cdn1.iconfinder.com/data/icons/logos-3/304/codeigniter-icon-512.png'
-                    }, {
-                        tool: 'Vue Cli',
-                        icon: 'https://cdn.iconscout.com/icon/free/png-512/vue-282497.png'
-                    }, {
-                        tool: 'Sass',
-                        icon: 'https://cdn.iconscout.com/icon/free/png-512/sass-226054.png'
-                    }, {
-                        tool: 'Flutter',
-                        icon: 'https://cdn.iconscout.com/icon/free/png-512/flutter-2038877-1720090.png'
-                    }, {
-                        tool: 'MySQL',
-                        icon: 'https://cdn.iconscout.com/icon/free/png-512/mysql-21-1174941.png'
-                    }, {
-                        tool: 'SQLite',
-                        icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sqlite-square-icon.svg/480px-Sqlite-square-icon.svg.png'
-                    }, {
-                        tool: 'Illustrator',
-                        icon: 'https://eps-production.com/wp-content/uploads/2020/03/Illustrator_CC_eps-production.com_.PNG.png'
-                    }, {
-                        tool: 'Photoshop',
-                        icon: 'https://www.blackxperience.com/assets/blackchannel/photos/adobe-photoshop-express-logo-3942.jpg'
-                    }, {
-                        tool: 'Premiere',
-                        icon: 'https://images.vexels.com/media/users/3/163292/isolated/preview/3087de3a36b76b94e9178fd791d7886e-premiere-pro-pr-colored-icon-by-vexels.png'
-                    }]
+                    skills: ['Laravel', 'CodeIgniter', 'Vue Cli', 'Sass', 'Flutter', 'MySQL', 'SQLite',
+                        'Photoshop', 'Illustrator', 'Premiere'
+                    ],
+                    socials: [{
+                            icon: 'la-facebook',
+                            url: '#'
+                        },
+                        {
+                            icon: 'la-instagram',
+                            url: 'https://www.instagram.com/ashtaaav/'
+                        },
+                        {
+                            icon: 'la-linkedin',
+                            url: 'https://www.linkedin.com/in/ashta-v-836b56186/'
+                        },
+                        {
+                            icon: 'la-dribbble',
+                            url: 'https://dribbble.com/ashtav'
+                        },
+                    ]
                 }
             },
 
-            mounted: () => {
-
+            mounted() {
                 var flkty = new Flickity('.list-testimonial', {
-                    // options
                     cellAlign: 'left',
-                    groupCells: 2
+                    groupCells: 1,
+                    dragThreshold: 10,
+                    autoPlay: true
                 });
-
             }
 
 

@@ -8,18 +8,21 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  padding: 0 15px; }
+  width: 50%;
+  transition: .3s; }
   .me .photo img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
     border: 5px #fff solid;
-    box-shadow: 0 1px 4px #ddd; }
+    box-shadow: 0 1px 4px #ddd;
+    transition: .3s; }
   .me .socials ul {
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    width: 350px;
+    display: inline-block; }
     .me .socials ul li {
       display: inline-block; }
       .me .socials ul li:first-child a {
@@ -31,11 +34,20 @@ body {
         padding: 10px 15px 7px 15px;
         border: 1px #ddd solid;
         border-left: none;
-        background-color: #fff; }
+        background-color: #fff;
+        width: calc(348px / 6); }
         .me .socials ul li a:hover {
           color: #0275d8 !important;
           background-color: #f9f9f9; }
         .me .socials ul li a i {
           font-size: 20px; }
+
+@media only screen and (max-width: 800px) {
+  .me {
+    width: 100%;
+    padding: 0 25px; }
+    .me .photo img {
+      width: 150px;
+      height: 150px; } }
 
 /*# sourceMappingURL=style.css.map */

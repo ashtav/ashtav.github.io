@@ -49,5 +49,17 @@ body {
     .me .photo img {
       width: 150px;
       height: 150px; } }
+@media only screen and (max-width: 375px) {
+  .me {
+    width: 100%; }
+    .me .socials ul {
+      padding: 0;
+      margin: 0;
+      width: 100%; }
+      .me .socials ul li {
+        width: calc(100% / 6); }
+        .me .socials ul li a {
+          padding: 10px 10px;
+          width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

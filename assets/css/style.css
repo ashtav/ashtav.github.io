@@ -59,7 +59,7 @@ body {
       .me .socials ul li {
         width: calc(100% / 6); }
         .me .socials ul li a {
-          padding: 10px 10px;
+          padding: 10px 10px 7px 10px;
           width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

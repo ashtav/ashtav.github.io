@@ -1,160 +1,40 @@
 html,
 body {
   overflow-x: hidden;
-  font-family: 'ABeeZee', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  background-color: #f9f9f9; }
 
-.header {
-  background-color: #fafafc;
-  position: relative; }
-
-.v-center {
-  display: flex;
-  align-items: center; }
-
-.text-name {
-  color: #0c0b5d;
-  font-weight: bold;
-  font-size: 65px;
-  font-family: 'Carter One', cursive; }
-
-.btn-green {
-  background-color: #65b559;
-  color: #fff;
-  padding: 9px 25px;
-  border-radius: 50px;
-  outline: none;
-  box-shadow: 0 2px 10px #65b559;
-  transition: .3s; }
-  .btn-green:hover {
-    box-shadow: none;
-    color: #fff; }
-
-.panel-rounded {
-  background-color: #fff;
-  padding: 15px;
-  position: absolute;
-  bottom: -50px;
+.me {
+  position: fixed;
   left: 50%;
-  border: 1px #ddd solid;
-  border-radius: 50px;
-  width: 80%;
-  transform: translate(-50%, 0); }
-
-.avatar {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 3px #fff solid;
-  box-shadow: 0 2px 4px #ddd; }
-  .avatar img {
-    height: 60px;
-    width: 60px;
-    object-fit: cover; }
-
-.social {
-  position: absolute;
-  bottom: 17px;
-  transition: .3s; }
-  .social li {
-    list-style: none;
-    display: inline-table;
-    background-color: #fff;
-    border-radius: 3px;
-    border: 1px #f1f1f1 solid; }
-    .social li a {
-      color: #777;
-      display: inline-block;
-      padding: 7px 7px 4px 7px;
-      transition: .3s; }
-      .social li a i {
-        font-size: 22px; }
-      .social li a:hover {
-        color: #0c0b5d !important; }
-
-.skills {
-  border-top: 1px #ddd solid;
-  border-left: 1px #ddd solid; }
-  .skills .col {
-    border-bottom: 1px #ddd solid;
-    border-right: 1px #ddd solid; }
-    .skills .col .item {
-      text-align: center; }
-      .skills .col .item img {
-        display: inline-block;
-        height: 50px;
-        object-fit: cover; }
-
-.section-3 {
-  background-color: #f5f5f5; }
-  .section-3 .list-testimonial .client {
-    width: 300px;
-    margin: 5px;
-    border: 1px #ddd solid;
-    background-color: #fff; }
-    .section-3 .list-testimonial .client img {
-      width: 100%; }
-
-.footer {
-  background-color: #f5f5f5;
-  text-align: center;
-  padding: 45px 0; }
-  .footer .square {
-    border: 1px #ccc solid;
-    width: 45px;
-    height: 45px;
-    display: inline-block;
-    margin: 30px 0;
-    transform: rotate(45deg);
-    background-color: #fff;
-    border-radius: 5px; }
-
-.nav {
-  background-color: #fff;
-  padding: 15px 0; }
-  .nav img {
-    width: 40px; }
-  .nav .nav-menu {
-    float: right;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+  .me .photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px #fff solid;
+    box-shadow: 0 1px 4px #ddd; }
+  .me .socials ul {
     padding: 0;
     margin: 0; }
-    .nav .nav-menu li {
+    .me .socials ul li {
       display: inline-block; }
-      .nav .nav-menu li a {
-        color: #333;
+      .me .socials ul li:first-child a {
+        border-left: 1px #ddd solid; }
+      .me .socials ul li a {
+        color: #666;
         text-decoration: none;
-        display: block;
-        padding: 10px 15px;
-        transition: .2s;
-        border-radius: 5px; }
-        .nav .nav-menu li a:hover {
-          color: purple;
-          cursor: pointer;
-          background-color: #efefef; }
-
-.text-dark-green {
-  color: #032732; }
-
-.text-purple {
-  color: purple; }
-
-.text-orange {
-  color: orange; }
-
-@media only screen and (max-width: 575px) {
-  .nav {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 999; }
-
-  .social {
-    left: 50%;
-    bottom: -20px;
-    transform: translate(-50%, 0);
-    width: 100%;
-    text-align: center; } }
+        display: inline-block;
+        padding: 10px 15px 7px 15px;
+        border: 1px #ddd solid;
+        border-left: none;
+        background-color: #fff; }
+        .me .socials ul li a:hover {
+          color: #0275d8 !important;
+          background-color: #f9f9f9; }
+        .me .socials ul li a i {
+          font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

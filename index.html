@@ -17,12 +17,9 @@
 
     <title>Ashta</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"
-        integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/line-awesome.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -32,7 +29,27 @@
 
 <body>
     <div id="app">
+        <div class="me text-center">
+            <div class="photo">
+                <img src="assets/images/me.jpg" alt="">
+            </div>
 
+            <h1 class="my-4">Ashta</h1>
+            <h4>Web & Mobile App Developer</h4>
+            <p class="text-muted my-3">
+                Introverted personality, love the art of design, photo editing, video editing and music maker. I can play several instruments, but piano is my favorite.
+            </p>
+
+            <div class="socials">
+                <ul>
+                    <li v-for="(data, i) in socials" :key="i">
+                        <a :href="data.url" target="_blank"> <i :class="`la la-${data.icon}`"></i> </a>
+                    </li>
+                </ul>
+            </div>
+
+            
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
@@ -49,20 +66,28 @@
                         'Photoshop', 'Illustrator', 'Premiere'
                     ],
                     socials: [{
-                            icon: 'la-facebook',
-                            url: '#'
+                            icon: 'facebook',
+                            url: 'https://facebook.com/'
                         },
                         {
-                            icon: 'la-instagram',
+                            icon: 'instagram',
                             url: 'https://www.instagram.com/ashtaaav/'
                         },
                         {
-                            icon: 'la-linkedin',
+                            icon: 'linkedin',
                             url: 'https://www.linkedin.com/in/ashta-v-836b56186/'
                         },
                         {
-                            icon: 'la-dribbble',
+                            icon: 'dribbble',
                             url: 'https://dribbble.com/ashtav'
+                        },
+                        {
+                            icon: 'github',
+                            url: 'https://github.com/ashtav'
+                        },
+                        {
+                            icon: 'whatsapp',
+                            url: 'https://wa.me/6281999970823'
                         },
                     ]
                 }
